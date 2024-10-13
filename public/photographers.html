@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотографы | Фотостудия "Свет и тень"</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Фотостудия "Свет и тень"</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="photographers.html">Фотографы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="studios.html">Студии</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="booking.html">Забронировать</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Регистрация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron text-center">
+        <h1>Наши фотографы - мастера своего дела</h1>
+        <p class="lead">Мы собрали команду талантливых и креативных фотографов, которые любят свое дело и умеют работать с любыми моделями.</p>
+    </header>
+
+    <div class="content">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="img/photographer1.jpg" alt="Фотограф 1" class="img-fluid rounded-circle mb-3">
+                    <h3>Иван Иванов</h3>
+                    <p>Опыт работы: 10 лет. Специализация: портретная фотография.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photographer1Modal">Портфолио</button>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="img/photographer2.jpg" alt="Фотограф 2" class="img-fluid rounded-circle mb-3">
+                    <h3>Елена Петрова</h3>
+                    <p>Опыт работы: 8 лет. Специализация: семейная фотография.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photographer2Modal">Портфолио</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal fade" id="photographer1Modal" tabindex="-1" role="dialog" aria-labelledby="photographer1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="photographer1ModalLabel">Иван Иванов</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/photographer1.jpg" alt="Фотограф 1" class="img-fluid rounded-circle mb-3">
+                    <p>Опыт работы: 10 лет. Специализация: портретная фотография.</p>
+                    <p>Контакты: +7 (123) 456-78-90, ivan@example.com</p>
+                    <p>Примеры работ:</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/portfolio1_1.jpg" alt="Пример работы 1" class="img-fluid">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/portfolio1_2.jpg" alt="Пример работы 2" class="img-fluid">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/portfolio1_3.jpg" alt="Пример работы 3" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="photographer2Modal" tabindex="-1" role="dialog" aria-labelledby="photographer2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="photographer2ModalLabel">Елена Петрова</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/photographer2.jpg" alt="Фотограф 2" class="img-fluid rounded-circle mb-3">
+                    <p>Опыт работы: 8 лет. Специализация: семейная фотография.</p>
+                    <p>Контакты: +7 (123) 456-78-91, elena@example.com</p>
+                    <p>Примеры работ:</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/portfolio2_1.jpg" alt="Пример работы 1" class="img-fluid">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/portfolio2_2.jpg" alt="Пример работы 2" class="img-fluid">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/portfolio2_3.jpg" alt="Пример работы 3" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <p>Контакты: +7 (123) 456-78-90, email@example.com</p>
+            <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+            <p>© 2024 Фотостудия "Свет и тень"</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

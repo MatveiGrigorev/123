@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студии | Фотостудия "Свет и тень"</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Фотостудия "Свет и тень"</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="photographers.html">Фотографы</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="studios.html">Студии</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="booking.html">Забронировать</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Регистрация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron text-center">
+        <h1>Выберите студию по душе</h1>
+        <p class="lead">У нас есть студии разных форматов и стилей, чтобы каждый мог найти то, что ему по душе.</p>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="img/studio1.jpg" alt="Студия 1" class="img-fluid mb-3">
+                <h3>Студия "Классика"</h3>
+                <p>Размер: 50 кв.м. Оснащение: фоны, стулья, столы. Локация: центр города.</p>
+                <p>Цена: 1500 руб/час</p>
+                <a href="booking.html" class="btn btn-primary">Забронировать</a>
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="img/studio2.jpg" alt="Студия 2" class="img-fluid mb-3">
+                <h3>Студия "Модерн"</h3>
+                <p>Размер: 70 кв.м. Оснащение: дизайнерские предметы, фоны. Локация: окраина города.</p>
+                <p>Цена: 2000 руб/час</p>
+                <a href="booking.html" class="btn btn-primary">Забронировать</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <p>Контакты: +7 (123) 456-78-90, email@example.com</p>
+            <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+            <p>© 2024 Фотостудия "Свет и тень"</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

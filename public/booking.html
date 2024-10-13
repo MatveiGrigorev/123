@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Забронировать | Фотостудия "Свет и тень"</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Фотостудия "Свет и тень"</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="photographers.html">Фотографы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="studios.html">Студии</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="booking.html">Забронировать</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Регистрация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron text-center">
+        <h1>Забронируйте студию онлайн</h1>
+        <p class="lead">Заполните форму ниже, чтобы забронировать студию.</p>
+    </header>
+
+    <section class="container">
+        <form id="bookingForm" action="#" method="post">
+            <div class="form-group">
+                <label for="date">Дата:</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Время:</label>
+                <input type="time" class="form-control" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="studio">Студия:</label>
+                <select class="form-control" id="studio" name="studio" required>
+                    <option value="classic">Студия "Классика"</option>
+                    <option value="modern">Студия "Модерн"</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="photographer">Фотограф (опционально):</label>
+                <select class="form-control" id="photographer" name="photographer">
+                    <option value="ivan">Иван Иванов</option>
+                    <option value="elena">Елена Петрова</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">Комментарий:</label>
+                <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+        </form>
+    </section>
+
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Успех!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Вы успешно забронировали студию. Мы свяжемся с вами в ближайшее время для подтверждения бронирования.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <p>Контакты: +7 (123) 456-78-90, email@example.com</p>
+            <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+            <p>© 2024 Фотостудия "Свет и тень"</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
